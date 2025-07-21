@@ -1,7 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
 @import "tailwindcss";
+
+@theme {
+	--font-monaco: monaco, Consolas, Lucida Console, monospace;
+	--font-robotoMono: "Roboto Mono", monospace;
+}
 
 :root {
 	--font-monaco: monaco, Consolas, Lucida Console, monospace;
+	--font-robotoMono: "Roboto Mono", monospace;
 	--dot-color: rgba(255, 255, 255, 0.5); /* lighter dot on white background */
 	--dot-size: 0.08rem;
 	--dot-spacing: 4rem;

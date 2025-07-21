@@ -32,11 +32,17 @@ export default [
 				"warn",
 				{ allowConstantExport: true },
 			],
-			"no-unused-vars": [
-				"error",
+			"react/prop-types": "off",
+
+			// 🚨 Unused variable warnings
+			"no-unused-vars": "off", // turn off base rule
+			"unused-imports/no-unused-vars": [
+				"warn",
 				{ vars: "all", args: "after-used", ignoreRestSiblings: true },
 			],
-			"react/prop-types": "off",
+
+			// 🚨 Unused import removal
+			"unused-imports/no-unused-imports": "error",
 		},
 	},
 ];
