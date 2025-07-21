@@ -1,5 +1,30 @@
 @import "tailwindcss";
 
-@theme {
+:root {
 	--font-monaco: monaco, Consolas, Lucida Console, monospace;
+	--dot-color: rgba(255, 255, 255, 0.5); /* lighter dot on white background */
+	--dot-size: 0.08rem;
+	--dot-spacing: 4rem;
+	--dot-grid: radial-gradient(
+		var(--dot-color) var(--dot-size),
+		transparent 0
+	);
+
+	--actual-black: rgba(17, 17, 17, 1); /* true black for dark mode */
+}
+
+.dark {
+	--dot-color: rgba(255, 255, 255, 0.5); /* white dot on black background */
+	/* other vars can stay the same unless you want separate spacing/size */
+}
+
+.bg-dot-grid {
+	@apply dark:bg-actual-black bg-white;
+	background-image:
+		radial-gradient(var(--dot-color) var(--dot-size), transparent 0),
+		radial-gradient(var(--dot-color) var(--dot-size), transparent 0);
+	background-size: var(--dot-spacing) var(--dot-spacing);
+	background-position:
+		0 0,
+		calc(var(--dot-spacing) / 2) calc(var(--dot-spacing) / 2);
 }
