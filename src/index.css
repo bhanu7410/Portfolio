@@ -16,8 +16,6 @@
 		var(--dot-color) var(--dot-size),
 		transparent 0
 	);
-
-	--actual-black: rgba(17, 17, 17, 1); /* true black for dark mode */
 }
 
 .dark {
@@ -25,7 +23,7 @@
 	/* other vars can stay the same unless you want separate spacing/size */
 }
 
-.bg-dot-grid {
+/* .bg-dot-grid {
 	@apply dark:bg-actual-black bg-white;
 	background-image:
 		radial-gradient(var(--dot-color) var(--dot-size), transparent 0),
@@ -34,4 +32,4 @@
 	background-position:
 		0 0,
 		calc(var(--dot-spacing) / 2) calc(var(--dot-spacing) / 2);
-}
+} */

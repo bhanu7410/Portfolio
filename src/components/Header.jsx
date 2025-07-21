@@ -1,14 +1,15 @@
 import Card from "./Card";
 
-import linkedinLogo from "../assets/LinkedIn Logo Icon.svg";
-import githubLogo from "../assets/github-mark-white.svg";
+import linkedinLogo from "../assets/ICONS/LinkedIn Logo Icon.svg";
+import githubLogo from "../assets/ICONS/github-mark-white.svg";
+import mongodbLogo from "../assets/ICONS/MongoDB.svg";
+import reactLogo from "../assets/ICONS/react.svg";
+import expressLogo from "../assets/ICONS/Express Icon.svg";
+import nodejsLogo from "../assets/ICONS/Node.js Icon.svg";
+import nextjsLogo from "../assets/ICONS/Next.js Icon.svg";
+import typescriptLogo from "../assets/ICONS/TypeScript Icon.svg";
 import pin from "../assets/pin.svg";
-import mongodbLogo from "../assets/MongoDB.svg";
-import reactLogo from "../assets/react.svg";
-import expressLogo from "../assets/Express Icon.svg";
-import nodejsLogo from "../assets/Node.js Icon.svg";
-import nextjsLogo from "../assets/Next.js Icon.svg";
-import typescriptLogo from "../assets/TypeScript Icon.svg";
+import rightArrow from "../assets/ArrowRight.png";
 
 import IconPop from "./IconPop";
 import SocialIconButton from "./SocialIconButton";
@@ -31,11 +32,12 @@ export default function Header() {
 				/>
 
 				<div className="group mr-2 inline-block flex-wrap rounded-xl border-2 border-stone-600/50 p-3 hover:cursor-pointer hover:border-orange-500 hover:bg-orange-500/15">
-					<span className="flex items-center gap-1">
+					<span className="flex items-center gap-1 whitespace-nowrap">
 						Resume
-						<span className="max-w-0 overflow-hidden opacity-0 transition-all duration-200 ease-in group-hover:max-w-[20px] group-hover:opacity-100">
-							→
-						</span>
+						<img
+							src={rightArrow}
+							className="inline-block h-[1.5em] w-0 align-baseline opacity-0 transition-all duration-200 ease-in group-hover:w-[1.5em] group-hover:opacity-100"
+						/>
 					</span>
 				</div>
 			</div>
@@ -53,7 +55,7 @@ export default function Header() {
 			</div>
 
 			<div className="mt-4 text-white">
-				I'm a full stack developer specializing{" "}
+				I&apos;m a Full Stack Developer specializing{" "}
 				<IconPop
 					icons={[
 						{ src: mongodbLogo, color: "bg-green-300" },

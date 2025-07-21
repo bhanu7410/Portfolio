@@ -1,4 +1,3 @@
-import mongodbLogo from "../assets/MongoDB.svg";
 export default function IconPop({ icons, children }) {
 	const length = icons.length;
 
