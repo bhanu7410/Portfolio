@@ -14,18 +14,18 @@ export default function Technologies() {
 		<Card>
 			<div className="pb-4 text-4xl">Current Technologies </div>
 			<div>
-				I&apos;m proficient in a range of modern technologies that help
-				me to build highly functional solutions. These are some of my
-				main technologies.
+				I work with a range of modern technologies to build
+				high-performing, functional solutions. These are some of my core
+				tools and frameworks.
 			</div>
 			<div className="mt-4 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
 				<TechIcon
 					info={{
-						title: "Figma",
-						description: "Design Tool",
-						src: figmaLogo,
-						imgBg: "bg-green-800",
-						hoverBg: "hover:bg-green-800",
+						title: "React",
+						description: "JavaScript Library",
+						src: reactLogo,
+						imgBg: "bg-indigo-950",
+						hoverBg: "hover:bg-indigo-950",
 					}}
 				/>
 				<TechIcon
@@ -39,20 +39,20 @@ export default function Technologies() {
 				/>
 				<TechIcon
 					info={{
-						title: "React",
-						description: "JavaScript Library",
-						src: reactLogo,
-						imgBg: "bg-indigo-950",
-						hoverBg: "hover:bg-indigo-950",
-					}}
-				/>
-				<TechIcon
-					info={{
 						title: "Express",
 						description: "Backend Tool",
 						src: expressLogo,
 						imgBg: "bg-neutral-100",
 						hoverBg: "hover:bg-neutral-100",
+					}}
+				/>
+				<TechIcon
+					info={{
+						title: "Figma",
+						description: "Design Tool",
+						src: figmaLogo,
+						imgBg: "bg-green-800",
+						hoverBg: "hover:bg-green-800",
 					}}
 				/>
 				<TechIcon

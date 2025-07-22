@@ -2,11 +2,11 @@ export default function EducationItem({ item, isLast }) {
 	return (
 		<div className="relative">
 			{/* Timeline dot */}
-			<div className="absolute left-0 top-2 size-3 rounded-full bg-orange-400"></div>
+			<div className="absolute top-2 left-0 size-3 rounded-full bg-orange-400"></div>
 
 			{/* Timeline line */}
 			{!isLast && (
-				<div className="absolute left-1.5 top-5 h-full w-0.5 bg-neutral-600"></div>
+				<div className="absolute top-5 left-1.5 h-full w-0.5 bg-neutral-600"></div>
 			)}
 
 			{/* Content */}
@@ -17,7 +17,19 @@ export default function EducationItem({ item, isLast }) {
 							{item.degree}
 						</h3>
 						<p className="text-sm text-neutral-300">
-							{item.field} • {item.institution}
+							{item.field} •{" "}
+							{item.url ? (
+								<a
+									href={item.url}
+									target="_blank"
+									rel="noopener noreferrer"
+									className="transition-colors hover:text-orange-400 hover:underline"
+								>
+									{item.institution}
+								</a>
+							) : (
+								item.institution
+							)}
 						</p>
 					</div>
 					<span className="mt-1 text-sm text-neutral-400 sm:mt-0">

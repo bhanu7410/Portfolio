@@ -9,7 +9,7 @@ export default function Bio() {
 	}
 
 	return (
-		<div className="rounded bg-neutral-700/25 p-6">
+		<div className="rounded-lg bg-neutral-700/25 p-6">
 			{/* Animated Tabs */}
 			<div className="relative flex gap-1 rounded bg-neutral-600 p-1 text-2xl">
 				{/* Animated background */}

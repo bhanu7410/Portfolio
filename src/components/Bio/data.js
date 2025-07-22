@@ -32,11 +32,12 @@ export const education = [
 		degree: "Bachelor of Technology",
 		field: "Computer Science and Engineering",
 		institution: "Gitam Hyderabd",
-		period: "2018 - 2022",
+		period: "2019 - 2023",
 		highlights: [
 			"CGPA: 9.34/10",
 			"Relevant coursework: Data Structures, Algorithms, Web Development",
 			"Dean's List for academic excellence",
 		],
+		url: "https://www.gitam.edu/hyderabad/",
 	},
 ];
