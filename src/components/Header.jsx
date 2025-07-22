@@ -11,8 +11,8 @@ import typescriptLogo from "../assets/ICONS/TypeScript Icon.svg";
 import pin from "../assets/pin.svg";
 import rightArrow from "../assets/ArrowRight.png";
 
-import IconPop from "./IconPop";
-import SocialIconButton from "./SocialIconButton";
+import IconPop from "./util/IconPop";
+import SocialIconButton from "./util/SocialIconButton";
 
 export default function Header() {
 	return (

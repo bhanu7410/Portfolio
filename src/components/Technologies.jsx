@@ -7,7 +7,7 @@ import postgresSqlLogo from "../assets/ICONS/PostgresSQL Icon.svg";
 import gitLogo from "../assets/ICONS/Git Icon.svg";
 
 import Card from "./util/Card";
-import TechIcon from "./TechIcon";
+import TechIcon from "./TechInfo";
 
 export default function Technologies() {
 	return (

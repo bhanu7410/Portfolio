@@ -13,12 +13,12 @@ export default function TechIcon({ info }) {
 				</div>
 				<div className="min-w-0 flex-1">
 					<div
-						className={`truncate text-lg font-semibold ${info.title === "Express" || info.title === "PostgreSQL" ? "text-neutral-900" : ""} sm:text-xl`}
+						className={`truncate text-lg font-semibold ${info.title === "Express" || info.title === "PostgreSQL" ? "group-hover:text-neutral-900" : ""} sm:text-xl`}
 					>
 						{info.title}
 					</div>
 					<div
-						className={`truncate text-xs ${info.title === "Express" || info.title === "PostgreSQL" ? "text-neutral-600" : "text-gray-400"} sm:text-sm`}
+						className={`truncate text-xs text-gray-400 ${info.title === "Express" || info.title === "PostgreSQL" ? "group-hover:text-neutral-600" : ""} sm:text-sm`}
 					>
 						{info.description}
 					</div>

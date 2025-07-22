@@ -5,11 +5,9 @@ import Technologies from "./components/Technologies";
 
 function App() {
 	return (
-		<div className="h-screen w-screen bg-[rgba(17,17,17,1)] font-(family-name:--font-monaco) text-white selection:bg-orange-400 selection:text-white lg:px-20">
+		<div className="bg-[rgba(17,17,17,1)] py-5 font-(family-name:--font-monaco) text-white selection:bg-orange-400 selection:text-white lg:px-30">
 			<Header />
-
 			<Technologies />
-
 			<Bio />
 		</div>
 	);
