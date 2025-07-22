@@ -11,12 +11,12 @@ export default function Bio() {
 	return (
 		<div className="rounded bg-neutral-700/25 p-6">
 			{/* Animated Tabs */}
-			<div className="relative flex gap-1 rounded bg-neutral-600 p-1 text-xl">
+			<div className="relative flex gap-1 rounded bg-neutral-600 p-1 text-2xl">
 				{/* Animated background */}
 				<div
-					className={`absolute top-1 h-[calc(100%-8px)] w-[calc(48%)] rounded bg-neutral-900 transition-all duration-200 ease-in-out ${
+					className={`absolute top-1 h-[calc(100%-8px)] w-[calc(48%)] rounded bg-neutral-900 transition-all duration-250 ease-in-out ${
 						activeTab === "Education"
-							? "left-[calc(51%)]"
+							? "left-[calc(51.5%)]"
 							: "left-1"
 					}`}
 				/>
