@@ -6,7 +6,7 @@ import figmaLogo from "../assets/ICONS/Figma Icon.svg";
 import postgresSqlLogo from "../assets/ICONS/PostgresSQL Icon.svg";
 import gitLogo from "../assets/ICONS/Git Icon.svg";
 
-import Card from "./Card";
+import Card from "./util/Card";
 import TechIcon from "./TechIcon";
 
 export default function Technologies() {

@@ -3,7 +3,7 @@ export default function TechIcon({ info }) {
 		<div
 			className={`group rounded-lg bg-neutral-700/50 p-4 transition-colors ${info.hoverBg} hover:cursor-pointer`}
 		>
-			<div className="flex items-center gap-4">
+			<div className="flex items-center gap-4 grayscale group-hover:grayscale-0">
 				<div className={`rounded-lg ${info.imgBg} flex-shrink-0 p-2.5`}>
 					<img
 						src={info.src}
@@ -12,10 +12,14 @@ export default function TechIcon({ info }) {
 					/>
 				</div>
 				<div className="min-w-0 flex-1">
-					<div className="truncate text-lg font-semibold sm:text-xl">
+					<div
+						className={`truncate text-lg font-semibold ${info.title === "Express" || info.title === "PostgreSQL" ? "text-neutral-900" : ""} sm:text-xl`}
+					>
 						{info.title}
 					</div>
-					<div className="truncate text-xs text-gray-400 sm:text-sm">
+					<div
+						className={`truncate text-xs ${info.title === "Express" || info.title === "PostgreSQL" ? "text-neutral-600" : "text-gray-400"} sm:text-sm`}
+					>
 						{info.description}
 					</div>
 				</div>

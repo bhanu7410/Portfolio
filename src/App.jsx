@@ -1,4 +1,5 @@
 // import Navbar from "./components/Navbar";
+import Bio from "./components/Bio/Bio";
 import Header from "./components/Header";
 import Technologies from "./components/Technologies";
 
@@ -8,6 +9,8 @@ function App() {
 			<Header />
 
 			<Technologies />
+
+			<Bio />
 		</div>
 	);
 }

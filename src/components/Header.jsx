@@ -1,4 +1,4 @@
-import Card from "./Card";
+import Card from "./util/Card";
 
 import linkedinLogo from "../assets/ICONS/LinkedIn Logo Icon.svg";
 import githubLogo from "../assets/ICONS/github-mark-white.svg";
