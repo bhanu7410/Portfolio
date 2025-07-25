@@ -40,7 +40,7 @@ export default function ExperienceItem({ item, isLast }) {
 					{item.highlights.map((highlight, idx) => (
 						<li
 							key={idx}
-							className="flex items-start text-sm text-neutral-200"
+							className="flex items-start text-neutral-200"
 						>
 							<span className="mt-1 mr-2 text-xs text-orange-400">
 								▸

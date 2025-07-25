@@ -25,10 +25,14 @@ export default function Header() {
 					hoverColor={
 						"hover:border-neutral-600 hover:bg-neutral-600/15"
 					}
+					url={"https://github.com/bhanu7410"}
 				/>
 				<SocialIconButton
 					icon={linkedinLogo}
 					hoverColor={"hover:border-blue-500 hover:bg-blue-500/15"}
+					url={
+						"https://www.linkedin.com/in/bhanu-prabhath-9a58201b7/"
+					}
 				/>
 
 				<div className="group mr-2 inline-block flex-wrap rounded-xl border-2 border-stone-600/50 p-3 hover:cursor-pointer hover:border-orange-500 hover:bg-orange-500/15">

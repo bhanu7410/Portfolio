@@ -48,6 +48,15 @@ export default function Technologies() {
 				/>
 				<TechIcon
 					info={{
+						title: "Tailwind",
+						description: "Styling Tool",
+						src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
+						imgBg: "bg-blue-800",
+						hoverBg: "hover:bg-blue-800",
+					}}
+				/>
+				<TechIcon
+					info={{
 						title: "Figma",
 						description: "Design Tool",
 						src: figmaLogo,
