@@ -3,7 +3,7 @@ export default function TechIcon({ info }) {
 		<div
 			className={`group rounded-lg bg-neutral-700/50 p-4 transition-colors ${info.hoverBg} hover:cursor-pointer`}
 		>
-			<div className="flex items-center gap-4 grayscale group-hover:grayscale-0">
+			<div className="flex items-center gap-4">
 				<div className={`rounded-lg ${info.imgBg} flex-shrink-0 p-2.5`}>
 					<img
 						src={info.src}

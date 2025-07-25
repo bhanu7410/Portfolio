@@ -12,7 +12,7 @@ import TechIcon from "./TechInfo";
 export default function Technologies() {
 	return (
 		<Card>
-			<div className="pb-4 text-4xl">Current Technologies </div>
+			<div className="pb-4 text-2xl">Current Technologies </div>
 			<div>
 				I work with a range of modern technologies to build
 				high-performing, functional solutions. These are some of my core

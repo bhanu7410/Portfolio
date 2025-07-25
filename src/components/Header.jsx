@@ -9,7 +9,6 @@ import nodejsLogo from "../assets/ICONS/Node.js Icon.svg";
 import nextjsLogo from "../assets/ICONS/Next.js Icon.svg";
 import typescriptLogo from "../assets/ICONS/TypeScript Icon.svg";
 import pin from "../assets/pin.svg";
-import rightArrow from "../assets/ArrowRight.png";
 
 import IconPop from "./util/IconPop";
 import SocialIconButton from "./util/SocialIconButton";
@@ -18,7 +17,7 @@ export default function Header() {
 	return (
 		<Card>
 			<div className="flex h-full items-center justify-start">
-				<div className="inline-block grow text-4xl">Bhanu Prabhath</div>
+				<div className="inline-block grow text-2xl">Bhanu Prabhath</div>
 
 				<SocialIconButton
 					icon={githubLogo}
@@ -35,18 +34,14 @@ export default function Header() {
 					}
 				/>
 
-				<div className="group mr-2 inline-block flex-wrap rounded-xl border-2 border-stone-600/50 p-3 hover:cursor-pointer hover:border-orange-500 hover:bg-orange-500/15">
-					<span className="flex items-center gap-1 whitespace-nowrap">
+				<div className="group mr-2 inline-block h-12 -translate-y-0.75 flex-wrap rounded-xl border-2 border-stone-600/50 p-2 hover:cursor-pointer hover:border-orange-500 hover:bg-orange-500/15">
+					<div className="translate-y-0.5 transition-transform duration-300 group-hover:-translate-y-0.25">
 						Resume
-						<img
-							src={rightArrow}
-							className="inline-block h-[1.5em] w-0 align-baseline opacity-0 transition-all duration-200 ease-in group-hover:w-[1.5em] group-hover:opacity-100"
-						/>
-					</span>
+					</div>
 				</div>
 			</div>
 
-			<div className="group text-lg text-gray-400">
+			<div className="group inline-block text-gray-400">
 				<a
 					href="https://www.google.com/maps/place/Hyderabad,+Telangana,+India"
 					target="_blank"

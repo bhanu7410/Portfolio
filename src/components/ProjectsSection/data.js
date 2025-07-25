@@ -22,7 +22,7 @@ export const projectsData = [
 		title: "Multi Scan",
 		githubSourceCode: "https://github.com/bhanu7410/MultiScan",
 		description:
-			"A Security Tool which scans a target using OpenVAS, Zap, and Nexpose. And consolidates the scan results.",
+			"A Security Tool which scans a target using OpenVAS, Zap, and Nexpose and consolidates the scan results.",
 		technologies: ["Python"],
 		liveLink: "",
 	},
