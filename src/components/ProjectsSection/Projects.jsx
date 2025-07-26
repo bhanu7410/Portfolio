@@ -2,6 +2,8 @@ import { useState } from "react";
 
 import Card from "../util/Card";
 import ProjectItem from "./ProjectItem";
+
+import reactIcon from "../../assets/ICONS/react.svg";
 import image from "../../assets/ProjectIcons/MultiScan.png";
 
 import { projectsData } from "./data";
@@ -28,8 +30,38 @@ export default function Projects() {
 							{hoveredProject && `0${hoveredProject}`} Keep your
 							Websites Protected
 						</div>
-						<div className="h-4/5 w-5/6 overflow-hidden rounded bg-amber-50">
-							<img src={image} alt="" className="h-full w-full" />
+						<div className="group relative flex items-end justify-center">
+							<div>
+								<img src={image} alt="" className="scale-100" />
+							</div>
+							{/* Tech icons container */}
+							<div className="absolute bottom-20">
+								{[
+									reactIcon,
+									reactIcon,
+									reactIcon,
+									reactIcon,
+									reactIcon,
+								].map((icon, index, arr) => (
+									<div
+										key={index}
+										className="absolute size-20 rounded bg-amber-50 opacity-0 transition-all duration-300 ease-out group-hover:-translate-y-[150px] group-hover:opacity-100"
+										style={{
+											transform: `translateX(${(index - (arr.length - 1) / 2) * 5}rem)`,
+											// rotate(${
+											// 	(index - (arr.length - 1) / 2) *
+											// 	20
+											// }deg)`,
+										}}
+									>
+										<img
+											src={icon}
+											alt=""
+											className="size-full"
+										/>
+									</div>
+								))}
+							</div>
 						</div>
 					</div>
 				</div>
