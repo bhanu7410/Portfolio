@@ -1,8 +1,15 @@
 import { Resend } from 'resend';
 
-const resend = new Resend(process.env.RESEND_API_KEY);
-
 export default async function handler(req, res) {
+  // Check if API key is configured
+  if (!process.env.RESEND_API_KEY) {
+    console.error('RESEND_API_KEY is not configured');
+    return res.status(500).json({ 
+      error: 'Email service is not configured. Please add RESEND_API_KEY to environment variables.' 
+    });
+  }
+
+  const resend = new Resend(process.env.RESEND_API_KEY);
   if (req.method === 'POST') {
     try {
       const { email, subject, message } = req.body;
@@ -26,7 +33,8 @@ export default async function handler(req, res) {
 
       res.status(200).json({ data });
     } catch (error) {
-      res.status(500).json({ error: error.message });
+      console.error('Error in send-email API:', error);
+      res.status(500).json({ error: error.message || 'Failed to send email' });
     }
   } else {
     res.setHeader('Allow', ['POST']);
