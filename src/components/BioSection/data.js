@@ -15,7 +15,7 @@ export const workExperience = [
 	{
 		id: 2,
 		title: "Full Stack Developer",
-		company: "Pixaflip Technilogies",
+		company: "Pixaflip Technologies",
 		period: "April 2022 - July 2022",
 		highlights: [
 			"Built responsive web applications using React",
@@ -31,7 +31,7 @@ export const education = [
 		id: 1,
 		degree: "Bachelor of Technology",
 		field: "Computer Science and Engineering",
-		institution: "Gitam Hyderabd",
+		institution: "Gitam Hyderabad",
 		period: "2019 - 2023",
 		highlights: [
 			"CGPA: 9.34/10",
