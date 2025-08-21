@@ -3,7 +3,7 @@ import Bio from "./components/BioSection/Bio";
 import Contact from "./components/ContactSection/Contact";
 import Header from "./components/Header";
 import Projects from "./components/ProjectsSection/Projects";
-import Technologies from "./components/Technologies";
+import Technologies from "./components/Technologies/Technologies";
 
 function App() {
 	return (
