@@ -16,7 +16,24 @@ import SocialIconButton from "./util/SocialIconButton";
 
 export default function Header() {
 	function resumeDownload() {
-		window.open(resumePDF);
+		const isMobileUserAgent =
+			/Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+				navigator.userAgent,
+			);
+		const isMobileWidth = window.innerWidth <= 640;
+
+		const isMobile = isMobileUserAgent || isMobileWidth;
+
+		if (isMobile) {
+			// Download directly on mobile
+			const link = document.createElement("a");
+			link.href = resumePDF;
+			link.download = "Bhanu Prabhath's Resume.pdf";
+			link.click();
+		} else {
+			// Open preview on desktop
+			window.open(resumePDF);
+		}
 	}
 	return (
 		<Card>
