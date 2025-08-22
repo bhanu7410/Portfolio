@@ -12,10 +12,10 @@ export default function TechIcon({ info, onTechClick, orderValue }) {
 				</div>
 			)}
 			<div
-				className={`rounded-lg bg-neutral-700/50 p-4 transition-colors ${info.hoverBg} hover:cursor-pointer`}
+				className={`rounded-lg bg-neutral-700/50 py-4 transition-colors sm:p-4 ${info.hoverBg} hover:cursor-pointer`}
 				onClick={onTechClick}
 			>
-				<div className="flex items-center gap-4">
+				<div className="flex items-center justify-center sm:gap-4">
 					<div
 						className={`rounded-lg ${info.imgBg} flex-shrink-0 p-2.5`}
 					>
@@ -25,7 +25,7 @@ export default function TechIcon({ info, onTechClick, orderValue }) {
 							className="size-8 transition-all ease-in group-hover:scale-120 group-hover:rotate-6 sm:size-10"
 						/>
 					</div>
-					<div className="min-w-0 flex-1">
+					<div className="hidden sm:block sm:min-w-0 sm:flex-1">
 						<div
 							className={`truncate text-lg font-semibold ${info.title === "Express" || info.title === "PostgreSQL" ? "group-hover:text-neutral-900" : ""} sm:text-xl`}
 						>

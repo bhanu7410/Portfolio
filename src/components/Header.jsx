@@ -20,30 +20,33 @@ export default function Header() {
 	}
 	return (
 		<Card>
-			<div className="flex h-full items-center justify-start">
+			<div className="mb-2 flex h-full flex-col gap-1 sm:mb-0 sm:flex-row sm:items-center sm:justify-start">
 				<div className="inline-block grow text-2xl">Bhanu Prabhath</div>
 
-				<SocialIconButton
-					icon={githubLogo}
-					hoverColor={
-						"hover:border-neutral-600 hover:bg-neutral-600/15"
-					}
-					url={"https://github.com/bhanu7410"}
-				/>
-				<SocialIconButton
-					icon={linkedinLogo}
-					hoverColor={"hover:border-blue-500 hover:bg-blue-500/15"}
-					url={
-						"https://www.linkedin.com/in/bhanu-prabhath-9a58201b7/"
-					}
-				/>
-
-				<div
-					onClick={resumeDownload}
-					className="group mr-2 inline-block h-12 -translate-y-0.75 flex-wrap rounded-xl border-2 border-stone-600/50 p-2 hover:cursor-pointer hover:border-orange-500 hover:bg-orange-500/15"
-				>
-					<div className="translate-y-0.5 transition-transform duration-300 group-hover:-translate-y-0.25">
-						Resume
+				<div className="flex items-center justify-start">
+					<SocialIconButton
+						icon={githubLogo}
+						hoverColor={
+							"hover:border-neutral-600 hover:bg-neutral-600/15"
+						}
+						url={"https://github.com/bhanu7410"}
+					/>
+					<SocialIconButton
+						icon={linkedinLogo}
+						hoverColor={
+							"hover:border-blue-500 hover:bg-blue-500/15"
+						}
+						url={
+							"https://www.linkedin.com/in/bhanu-prabhath-9a58201b7/"
+						}
+					/>
+					<div
+						onClick={resumeDownload}
+						className="group mr-2 flex -translate-y-0.75 flex-wrap items-center justify-center rounded-lg border-2 border-stone-600/50 p-1.25 text-sm hover:cursor-pointer hover:border-orange-500 hover:bg-orange-500/15 sm:inline-block sm:h-12 sm:rounded-xl sm:p-2 sm:text-base"
+					>
+						<div className="text-center transition-transform duration-300 group-hover:-translate-y-0.25 sm:translate-y-0.5">
+							Resume
+						</div>
 					</div>
 				</div>
 			</div>

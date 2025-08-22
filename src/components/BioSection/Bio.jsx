@@ -14,9 +14,9 @@ export default function Bio() {
 			<div className="relative flex gap-1 rounded bg-neutral-600 p-1 text-2xl">
 				{/* Animated background */}
 				<div
-					className={`absolute top-1 h-[calc(100%-8px)] w-[calc(48%)] rounded bg-neutral-900 transition-all duration-250 ease-in-out ${
+					className={`absolute top-1 h-[calc(100%-8px)] w-[calc(48%)] rounded bg-neutral-900 transition-all duration-250 ease-in-out sm:w-[calc(48%)] ${
 						activeTab === "Education"
-							? "left-[calc(51.5%)]"
+							? "left-[calc(50%)] sm:left-[calc(51.5%)]"
 							: "left-1"
 					}`}
 				/>

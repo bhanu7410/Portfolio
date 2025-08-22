@@ -1,18 +1,18 @@
 import { useState, useEffect } from "react";
 
 export default function ProjectItem({ project, onHover, onLeave }) {
-	const [uRHereStatus, setuRHereStatus] = useState(false);
+	const [uRHereStatus, setUrHereStatus] = useState(false);
 	const [displayedText, setDisplayedText] = useState("");
 	const fullText = "You are here the Whole Time!";
 
-	function handleuRHereStatus() {
-		setuRHereStatus(true);
+	function handleUrHereStatus() {
+		setUrHereStatus(true);
 		console.log("You are here the Whole Time!");
 	}
 
 	const handleClick = () => {
 		if (project.title === "Portfolio Website" && !uRHereStatus) {
-			handleuRHereStatus();
+			handleUrHereStatus();
 		}
 	};
 
@@ -36,7 +36,7 @@ export default function ProjectItem({ project, onHover, onLeave }) {
 			<div className="text-lg font-semibold">{project.title}</div>
 			<div className="mt-2 opacity-80">{project.description}</div>
 
-			<div className="mt-6 flex gap-2">
+			<div className="mt-6 flex flex-col gap-5 sm:flex-row">
 				<div>
 					<a
 						href={project.githubSourceCode}
