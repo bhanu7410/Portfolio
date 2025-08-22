@@ -10,10 +10,10 @@ export const projectsData = [
 	},
 	{
 		index: 2,
-		title: "Project Management",
+		title: "Task Management",
 		githubSourceCode: "https://github.com/bhanu7410/ProjectManagement",
 		description:
-			"Manage your projects efficiently with a user-friendly interface. Track tasks, keep notes and any required deadlines.",
+			"Manage your tasks efficiently with a user-friendly interface. Track multiple sets of tasks, keep notes and any required deadlines.",
 		technologies: ["React", "Node.js", "Express", "MongoDB"],
 		liveLink: "https://bhanu7410.github.io/ProjectManagement/",
 	},

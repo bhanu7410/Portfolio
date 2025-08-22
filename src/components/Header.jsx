@@ -9,11 +9,15 @@ import nodejsLogo from "../assets/ICONS/Node.js Icon.svg";
 import nextjsLogo from "../assets/ICONS/Next.js Icon.svg";
 import typescriptLogo from "../assets/ICONS/TypeScript Icon.svg";
 import pin from "../assets/pin.svg";
+import resumePDF from "/Resume.pdf";
 
 import IconPop from "./util/IconPop";
 import SocialIconButton from "./util/SocialIconButton";
 
 export default function Header() {
+	function resumeDownload() {
+		window.open(resumePDF);
+	}
 	return (
 		<Card>
 			<div className="flex h-full items-center justify-start">
@@ -34,7 +38,10 @@ export default function Header() {
 					}
 				/>
 
-				<div className="group mr-2 inline-block h-12 -translate-y-0.75 flex-wrap rounded-xl border-2 border-stone-600/50 p-2 hover:cursor-pointer hover:border-orange-500 hover:bg-orange-500/15">
+				<div
+					onClick={resumeDownload}
+					className="group mr-2 inline-block h-12 -translate-y-0.75 flex-wrap rounded-xl border-2 border-stone-600/50 p-2 hover:cursor-pointer hover:border-orange-500 hover:bg-orange-500/15"
+				>
 					<div className="translate-y-0.5 transition-transform duration-300 group-hover:-translate-y-0.25">
 						Resume
 					</div>
